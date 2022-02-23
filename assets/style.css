@@ -1,0 +1,89 @@
+.me-2 {
+    margin: 0px!important;
+}
+
+.nav-link {
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+}
+
+.highlight {
+    background-image: url('img/highlight-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 300px 0 300px;
+    overflow: hidden;
+    color: #faf8fa;
+}
+
+@media (max-width:767px) {
+    .highlight {
+      text-align: center;
+    }
+}
+  
+.highlight h1 {
+    font-weight: bold;
+    line-height: 1.5;
+    padding-top: 0;
+    margin-top: 0;
+    color: inherit;
+}
+  
+.highlight .intro {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+  
+@media (max-width:767px) {
+    .highlight .intro {
+      max-width: none;
+    }
+}
+  
+.highlight .intro p {
+    margin-bottom: 35px;
+}
+  
+.highlight .intro .btn {
+    padding: 16px 32px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 1;
+}
+  
+.highlight .intro .btn:hover {
+    opacity: 1;
+}
+  
+.highlight .intro .btn:active {
+    transform: translateY(1px);
+}
+  
+.highlight .intro .btn-primary {
+    background-color: #579045;
+    color: white;
+}
+
+.preview-menu {
+    padding: 100px 0 100px;
+    overflow: hidden;
+}
+
+.level-roast {
+    padding: 50px 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.img-roast {
+    width: 400px;
+    height: auto;
+}
