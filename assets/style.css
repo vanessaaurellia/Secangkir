@@ -93,7 +93,7 @@ h1 {
 }
 
 .menu {
-    padding: 50px 0 100px;
+    padding: 50px 0 50px;
     overflow: hidden;
 }
 
@@ -133,7 +133,7 @@ hr {
 .item-desc {
     font-size: 18px;
     font-weight: 300;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 .img-coffee {
@@ -147,4 +147,8 @@ hr {
 .col-centered {
     display: flex!important;
     align-items: center!important;
+}
+
+.input-number {
+    text-align: center;
 }
