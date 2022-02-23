@@ -89,5 +89,47 @@
 }
 
 h1 {
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.menu {
+    padding: 100px 0 100px;
+    overflow: hidden;
+}
+
+.menu-list {
+    margin: 0 10px;
+    border: 1px solid #72462c!important;
+}
+
+hr {
+    border: none;
+    border-top: 1px dotted #72462c;
+    height: 1px;
+    width: 80%;
+    padding: 0;
+    text-align: left;
+    margin: 5px;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.item-price {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c4985b;
+}
+
+.item-desc {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 0
+}
+
+.item-coffee {
+    width: 100px;
 }
