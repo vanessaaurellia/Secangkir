@@ -87,3 +87,7 @@
     width: 400px;
     height: auto;
 }
+
+h1 {
+    font-weight: bold;
+}
