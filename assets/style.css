@@ -112,6 +112,11 @@ hr {
     margin: 5px;
 }
 
+.item-coffee {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .item-name {
     font-size: 20px;
     font-weight: 600;
@@ -133,8 +138,6 @@ hr {
 
 .img-coffee {
     width: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .input-number {
