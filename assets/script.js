@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('.minus').click(function () {
 		var $input = $(this).parent().find('input');
 		var count = parseInt($input.val()) - 1;
-		count = count < 0 ? 0 : count;
+		count = count < 1 ? 1 : count;
 		$input.val(count);
 		$input.change();
 		return false;
@@ -14,3 +14,12 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+var remove = document.getElementsByClassName('btn-danger');
+for(var i=0; i<remove.length; i++){
+	var button = remove[i]
+	button.addEventListener('click', function(event){
+		var buttonClicked = event.target;
+		buttonClicked.parentElement.parentElement.remove();
+	})
+}

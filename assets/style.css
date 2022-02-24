@@ -109,7 +109,7 @@ hr {
     width: 95%;
     padding: 0;
     text-align: left;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 .item-coffee {
@@ -131,7 +131,7 @@ hr {
 }
 
 .item-desc {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 0;
 }
@@ -141,7 +141,7 @@ hr {
 }
 
 .input-number {
-    width: 10%!important;
+    width: 15%!important;
 }
 
 .col-centered {
@@ -151,4 +151,48 @@ hr {
 
 .input-number {
     text-align: center;
+}
+
+.cart {
+    padding: 50px 0 50px;
+    overflow: hidden;
+}
+
+.cart-title {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.harga {
+    text-align: right;
+    font-size: 20px;
+}
+
+.harga-title {
+    font-size: 24px;
+}
+
+.harga-total {
+    font-size: 24px;
+}
+
+.full {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.cart-items h5{
+    font-weight: 400;
+    margin: 0!important;
+}
+
+.cart-items {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.row-center {
+    display: flex;
+    align-items: center;
 }
