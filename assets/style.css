@@ -141,7 +141,7 @@ hr {
 }
 
 .input-number {
-    width: 15%!important;
+    width: 25%!important;
 }
 
 .col-centered {
@@ -163,17 +163,13 @@ hr {
     margin-bottom: 25px;
 }
 
-.harga {
+.price-title {
     text-align: right;
     font-size: 20px;
 }
 
-.harga-title {
-    font-size: 24px;
-}
-
-.harga-total {
-    font-size: 24px;
+.price-total {
+    font-size: 20px;
 }
 
 .full {
@@ -187,7 +183,7 @@ hr {
 }
 
 .cart-items {
-    padding: 12px 0;
+    padding: 25px 0;
     display: flex;
     align-items: center;
 }
@@ -195,4 +191,22 @@ hr {
 .row-center {
     display: flex;
     align-items: center;
+}
+
+.price-subtotal {
+    font-weight: 600;
+}
+
+input[type="number"] {
+    margin-right: 0;
+}
+  
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1;
+}
+
+.item-prices {
+    display: none;
 }
