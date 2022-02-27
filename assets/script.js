@@ -4,7 +4,6 @@ if (document.readyState == 'loading') {
     ready();
 }
 
-
 function ready() {
 	var remove = document.getElementsByClassName('btn-danger');
 	for(var i=0; i<remove.length; i++){
