@@ -303,12 +303,61 @@
                 
             </div><hr class="full">
             <div class="price-title">
-                Subtotal: 
-                <span class="price-subtotal">IDR 0</span>
-            </div>
-            <button class="btn btn-secondary btn-checkout">Bayar</button>
+                Subtotal:  
+                <span class="price-subtotal">Rp 0</span>
+            </div><br>
+            <button type="button" class="btn btn-secondary btn-checkout" data-toggle="modal" data-target="#checkoutModal">Beli</button>
         </div>
     </section>
+
+    <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Checkout</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Order Type</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                        <option value="1">Pickup</option>
+                        <option value="2" disabled>Delivery</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Metode pembayaran</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                        <option value="1">GoPay</option>
+                        <option value="2">OVO</option>
+                        <option value="3">Virtual Account</option>
+                        </select>
+                    </div>
+                    <hr class="full">
+                    <h5>Ringkasan pembayaran</h5><br>
+                    <div class="totalHarga">
+                        <div>Total Harga</div>
+                        <div class="totalHargaResult">Rp 0</div>
+                    </div>
+                    <div class="biayaLayanan">
+                        <div>Biaya Layanan</div>
+                        <div>Rp 3.000,00</div>
+                    </div>
+                    <hr class="full">
+                    <div class="totalTagihan">
+                        <div>Total Tagihan</div>
+                        <div class="totalTagihanResult">Rp 0</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer-dark">
         <div class="container">

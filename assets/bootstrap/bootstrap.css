@@ -2985,20 +2985,20 @@ fieldset:disabled .btn {
 .btn-primary {
 	color: #fff;
 	background-color: #72462c;
-	border-color: #72462c
+	border-color: #72462c;
 }
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #0b5ed7;
-	border-color: #0a58ca
+	background-color: #91683f;
+	border-color: #91683f
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
 	color: #fff;
-	background-color: #0b5ed7;
-	border-color: #0a58ca;
+	background-color: #72462c;
+	border-color: #72462c;
 }
 
 .btn-check:active+.btn-primary,
@@ -3007,8 +3007,8 @@ fieldset:disabled .btn {
 .btn-primary:active,
 .show>.btn-primary.dropdown-toggle {
 	color: #fff;
-	background-color: #0a58ca;
-	border-color: #0a53be
+	background-color: #72462c;
+	border-color: #72462c
 }
 
 
@@ -5769,7 +5769,8 @@ fieldset:disabled .btn {
 	background-clip: padding-box;
 	border: 1px solid rgba(0, 0, 0, .2);
 	border-radius: .3rem;
-	outline: 0
+	outline: 0;
+	padding: 20px;
 }
 
 .modal-backdrop {

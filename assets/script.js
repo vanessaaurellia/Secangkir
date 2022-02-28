@@ -43,6 +43,7 @@ function addToCard(event) {
     var cartItem = button.parentElement.parentElement;
     var name = cartItem.getElementsByClassName('item-name')[0].innerText;
 	var price = cartItem.getElementsByClassName('item-prices')[0].innerText;
+	var price = parseInt(price);
 	var prices = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(price);
     var image = cartItem.getElementsByClassName('img-coffee')[0].src;
     addItemToCart(name, prices, price, image);
@@ -99,12 +100,16 @@ function cartTotal() {
     var cartBox = document.getElementsByClassName('cart-box')[0];
     var cartItems = cartBox.getElementsByClassName('cart-items');
 	var subtotal = 0;
+	var totalTagihan = 0;
     for (var i=0; i<cartItems.length; i++) {
         var cartItem = cartItems[i];
 		var price = cartItem.querySelector('input[name="price"]').value;
 		var quantity = cartItem.querySelector('input[name="quantity"]').value;
 		document.getElementsByClassName('price-total')[i].innerText = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(price * quantity);
-		subtotal = subtotal + (price * quantity);
+		subtotal += (price * quantity);
 	}
+	totalTagihan += subtotal + 3000;
     document.getElementsByClassName('price-subtotal')[0].innerText = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(subtotal);
+    document.getElementsByClassName('totalHargaResult')[0].innerText = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(subtotal);
+	document.getElementsByClassName('totalTagihanResult')[0].innerText = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(totalTagihan);
 }

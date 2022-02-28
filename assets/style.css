@@ -170,6 +170,9 @@ hr {
 
 .btn-checkout {
     float: right;
+    width: 190px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .price-total {
@@ -178,7 +181,7 @@ hr {
 
 .full {
     width: 100%;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 .cart-items h5{
@@ -213,4 +216,22 @@ input[type=number]::-webkit-outer-spin-button {
 
 .item-prices {
     display: none;
+}
+
+.close {
+    background-color: white;
+    border: none;
+}
+
+.totalHarga, .biayaLayanan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.totalTagihan {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
 }
